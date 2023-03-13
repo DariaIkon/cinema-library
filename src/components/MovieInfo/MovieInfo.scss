@@ -1,0 +1,16 @@
+.movieinfo {
+  display: flex;
+  height: 100vh;
+  padding: 20px 40px;
+  .movieinfo__img {
+    width: 333px;
+    height: 500px;
+    margin-right: 40px;
+  }
+  .movieinfo__description {
+    .movieinfo__title {
+      color: #925b0a;
+      font-size: 34px;
+    }
+  }
+}
