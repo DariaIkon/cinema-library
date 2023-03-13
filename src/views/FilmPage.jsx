@@ -15,6 +15,7 @@ const FilmPage = () => {
     <>
       <MovieInfo film={film} />
       <Link to={`/${filmId}/cast`}>Cast</Link>
+      <Link to={`/${filmId}/review`}>Review</Link>
       <Outlet />
     </>
   );

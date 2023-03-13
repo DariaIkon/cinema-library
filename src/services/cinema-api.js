@@ -27,3 +27,12 @@ export async function fetchOnFilmCast(filmId) {
   );
   return response.data.cast;
 }
+
+// this is a request for review information for a movie page.
+
+export async function fetchOnFilmReview(filmId) {
+  const response = await axios.get(
+    `/movie/${filmId}/reviews?api_key=${KEY}&language=en-US`
+  );
+  return response.data.results;
+}

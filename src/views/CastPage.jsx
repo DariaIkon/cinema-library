@@ -14,13 +14,9 @@ function CastPage() {
 
   return (
     <ul>
-      {casts?.slice(0, 9).map(cast => (
+      {casts?.slice(0, 7).map(cast => (
         <li key={cast?.cast_id}>
-          <img
-            src={`${path}${cast?.profile_path}`}
-            alt="Photo Actor"
-            width="100px"
-          />
+          <img src={`${path}${cast?.profile_path}`} alt="Actor" width="100px" />
           <span>
             Actor: <span>{cast?.name}</span>
           </span>
